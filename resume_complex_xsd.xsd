@@ -37,7 +37,7 @@
 			<xs:element name="Education" type="myEducation"/>
 			<xs:element name="Address" type="xs:string"/>
 			<xs:element name="Phones">
-				<xs:complexType mixed="true">
+				<xs:complexType>
 					<xs:sequence>
 						<xs:element name="Phone" type="myPhone"/>
 					</xs:sequence>
