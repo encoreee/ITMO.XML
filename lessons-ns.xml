@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE Courses [
+	<!ELEMENT Courses (Course+)> 
+	<!ELEMENT Course (Name, Teacher, ClassTime, StartDate, Duration, Sources+)>
+	<!ELEMENT Name (#PCDATA)>
+	<!ELEMENT Teacher (#PCDATA)>
+	<!ELEMENT ClassTime (#PCDATA)>
+	<!ELEMENT StartDate (#PCDATA)>
+	<!ELEMENT Duration (#PCDATA)>
+	<!ELEMENT Sources (Source+)>
+	<!ELEMENT Source (#PCDATA)>
+]>
+
+<myns:Courses xmlns:myns = "http://www.itmo.ru/xml/lessons"
+			 xmlns:src="http://src.ru">
+	<Course>
+		<Name>
+			Основы технологий разметки (HTML, XML)
+		</Name>
+		<Teacher>
+			Смолянинов Антон
+		</Teacher>
+		<ClassTime>
+			18:30:00
+		</ClassTime>
+		<StartDate>
+			2020-12-18
+		</StartDate>
+		<Duration>
+			6
+		</Duration>
+		<Sources>
+			<src:Source>
+				http://www.itmo.ru/xml/lessons
+			</src:Source>
+		</Sources>
+	</Course>
+</myns:Courses>
