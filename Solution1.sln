@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Library.xml = Library.xml
 		Library_dtd.dtd = Library_dtd.dtd
 		Resume.xml = Resume.xml
+		resume_complex.xml = resume_complex.xml
+		resume_complex_xsd.xsd = resume_complex_xsd.xsd
 		Resume_xsd.xsd = Resume_xsd.xsd
 	EndProjectSection
 EndProject
