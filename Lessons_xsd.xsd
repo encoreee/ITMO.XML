@@ -1,0 +1,27 @@
+﻿<?xml version="1.0"?>
+<xs:schema xmlns:xs = "http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Courses">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Course">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Name" type="xs:string"/>
+							<xs:element name="Teacher" type="xs:string"/>
+							<xs:element name="ClassTime" type="xs:time"/>
+							<xs:element name="StartDate" type="xs:date"/>
+							<xs:element name="Duration" type="xs:integer"/>
+							<xs:element name="Sources">
+								<xs:complexType mixed="true">
+									<xs:sequence>
+										<xs:element name="Source"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

@@ -1,19 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
-<!DOCTYPE Courses [
-	<!ELEMENT Courses (Course+)> 
-	<!ELEMENT Course (Name, Teacher, ClassTime, StartDate, Duration, Sources+)>
-	<!ELEMENT Name (#PCDATA)>
-	<!ELEMENT Teacher (#PCDATA)>
-	<!ELEMENT ClassTime (#PCDATA)>
-	<!ELEMENT StartDate (#PCDATA)>
-	<!ELEMENT Duration (#PCDATA)>
-	<!ELEMENT Sources (Source+)>
-	<!ELEMENT Source (#PCDATA)>
-]>
-
-<myns:Courses xmlns:myns = "http://www.itmo.ru/xml/lessons"
-			 xmlns:src="http://src.ru">
+<Courses  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Lessons_xsd.xsd">
+		 
 	<Course>
 		<Name>
 			Основы технологий разметки (HTML, XML)
@@ -24,6 +11,7 @@
 		<ClassTime>
 			18:30:00
 		</ClassTime>
+		<!--<buf></buf>-->
 		<StartDate>
 			2020-12-18
 		</StartDate>
@@ -31,9 +19,9 @@
 			6
 		</Duration>
 		<Sources>
-			<src:Source>
+			<Source>
 				http://www.itmo.ru/xml/lessons
-			</src:Source>
+			</Source>
 		</Sources>
 	</Course>
-</myns:Courses>
+</Courses>
